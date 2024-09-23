@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information Tables with Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            overflow: hidden; /* Prevent body scrolling */
+        }
+        #content {
+            height: 80vh; /* Set a height for the content area */
+            overflow-y: auto; /* Enable vertical scrolling */
+            padding-right: 15px; /* Add space for scrollbar */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        #search-container {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Information Tables</h1>
+
+<div id="search-container">
+    <input type="text" id="search-input" placeholder="Search..." />
+    <button id="search-button">Search</button>
+</div>
+
+<div id="content">
+    <h2>Table 1: RMA</h2>
+    <table id="fruits-table">
+        <tr>
+            <th>RMA statements</th>
+            <th>Emphatising statement for customers.</th>
+            <th>Related Links For Referral</th>
+        </tr>
+        <tr>
+            <td>In warranty customers</td>
+            <td>1. Please note that to receive your replacement, you must submit the faulty unit at the designated collection point. You will then receive your replacement within 7 to 14 days. Thank you for your cooperation!
+                <br><br>
+                2. To proceed with your replacement, it is essential that you create the RMA order number. Please ensure that you submit the drive with the order number clearly marked on the package. Thank you for your attention to this important detail!
+                <br><br>
+                3. I’m pleased to inform you that your drive is still under warranty and is eligible for replacement!
+                <br><br>
+                4. Please find the below collection point address where you can submit your drive. Make sure to use this address for a smooth submission process!
+                <br><br>
+                5. (India) Please fill your details in the above link and generate your customer id and let me know once you're done. I will help you with the further process.
+                <a href="http://myservice.inspirisys.com/Master_CustomerEdit.aspx?Mode=new" target="_blank"> Inspyrysis link</a>
+            </td>
+            <td><a href="https://www.seagate.com/sg/en/support/service-centers/" target="_blank">Learn More</a></td>
+        </tr>
+        <tr>
+            <td>Out of warranty</td>
+            <td>1. When a hard drive makes unusual noises (such as clicks, grinding, whining, etc.), it usually indicates a physically failing hard drive, especially if the drive has started malfunctioning or generating errors. If this is the case, the drive should be replaced.
+                I am afraid that your hard drive is out of warranty since 11/21/2021. I suggest taking the drive to a local computer shop as they usually provide repairing services. If you have data on the drive, we would friendly recommend taking the device to a data recovery lab near your area to see if they are able to recover your information there.
+                <br><br>
+                2. I’m sorry to inform you that if the drive is out of warranty, it won’t be eligible for replacement as per Seagate’s policy. I understand this may be disappointing, and I appreciate your understanding.
+            </td>
+            <td><a href="https://www.seagate.com/sg/en/support/warranty-and-replacements/" target="_blank">Learn More</a></td>
+        </tr>
+        <tr>
+            <td>Tampered drive rejection not eligible for replacement</td>
+            <td>1. I’m truly sorry to inform you that the drive is not eligible for replacement because it is broken, which is considered a warranty void. Even if we send the drive for collection, it will likely be rejected as tampered.
+                <br><br>
+                2. You may refer to our warranty void checklist on our official website to know in detail. We highly appreciate your understanding on this matter.
+            </td>
+            <td><a href="https://www.seagate.com/sg/en/support/warranty-and-replacements/void-warranty-checklist/" target="_blank">Learn More</a></td>
+        </tr>
+        <tr>
+            <td>COD process</td>
+            <td>Please be informed "The Certificate of Destruction" (COD) is a crucial document for approved customers who need to return specific parts of their product to fulfill warranty exchange requirements. This process is particularly important for businesses and institutions that handle highly sensitive data, such as legal, medical, financial, and governmental entities. Seagate allows a maximum of five CODs per customer per quarter. Below is a detailed guide on the COD process.
+                <br><br>
+                <b>Please follow these steps for proper processing:</b>
+                <br><br>
+                Inform the customer about the specific requirements based on their product type (internal vs. external vs. helium vs. SSD).
+                <br><br>
+                <b>External Device:</b>
+                <br><br>
+                o Return physical external enclosure with label intact (serial must be visible)
+                <br>
+                o Return physical internal HDD top-face plate with label intact
+                <br>
+                o Return physical printed circuit board (PCB)
+                <br><br>
+                <b>Internal HDD:</b>
+                <br><br>
+                o Return physical top-face plate with label intact (serial must be visible)
+                <br><br>
+                o Return physical printed circuit board (PCB)
+                <br><br>
+                <b>Internal Helium HDD:</b>
+                <br><br>
+                o Provide a photo of top-face plate with a large X (serial must be visible) extending across the label with a permanent marker
+                <br><br>
+                o Return physical printed circuit board (PCB)
+                <br><br>
+                <b>Internal NVMe/M.2 SSD/SATA SSD:</b>
+                <br><br>
+                1. Provide a photo of the top-face label with a large X (serial must be visible) extending across the label with a permanent marker.
+                <br>
+                2. Advise the customer that tools are not provided and that Seagate is not responsible for any damages resulting from disassembly.
+                <br>
+                3. Explain to the customer they'll receive an email with the COD form included which must be filled out, signed, and attached in their reply to this email.
+                <br><br>
+                Use the email template provided below and attach the relevant COD form from the list below to the email.
+                "Thank you for contacting Seagate Support."
+            </td>
+        </tr>
+        <tr>
+            <td>ARO</td>
+            <td>1. Please be informed that for your advancement replacement order, you will receive the replacement unit shortly. You must submit the faulty unit at the collection point within 7 to 14 days; otherwise, the warranty will be voided. We are making this one-time exception because you are a valuable customer. Thank you for your understanding.
+                <br><br>
+                2. <B>Please choose the option of adavanced replacement order that you would like to proceed with.</B>
+				<br><br>
+				1. PARO= ARO Premium (3-5 business days ground) 18 dollars <br> 2. NARO= ARO Next Day (2day Air) 24 dollars <br> 3. OARO= ARO Overnight (Next Day Air) 33 dollars.
+ 
+            </td>
+            
+        </tr>
+		
+		<tr>
+            <td>RMA Delay:</td>
+            <td> 1. Where did  you purchase the hard drive ?<br><br>
+                 2. Could you please help me with the proof of purchase.<br><br>
+                 3. May I know when did you submit the drive in the collection point.<br><br>
+				 4. Could you please share me the proof of delivery for my reference.<br><br>
+				<br>
+		
+         </td>
+           
+        </tr>
+		
+		<tr>
+            <td>ADOBE</td>
+            <td> 1. Please try this start here option if that helps you to redeem the code. 
+                <br><br>
+				
+                2. Locate the ‘Start_Here’ icon on your drive
+                 Double click the ‘Start_Here’ icon on your drive
+                 Follow the steps in your browser
+                 On the ‘Summary’ page click the Adobe banner
+                 Click 'Redeem Offer' which will start the Adobe process
+                 Follow the Adobe steps and download the software
+				 
+				<br><br>
+				Please share the advertisement of the box image on the package and invoice. We need to forward this to the concerned team for verification in order to obtain the redemption link for you.
+
+
+ 
+            </td>
+            
+        </tr>
+    </table>
+
+    <h2>Table 2: Trouble shooting</h2>
+    <table id="Trouble shooting">
+        <tr>
+            <th>Drive</th>
+            <th>trouble shooting</th>
+            <th>More Info</th>
+        </tr>
+        <tr>
+            <td>TOOL KIT secure drives</td>
+            <td>1.Please be informed that the following is a list of Seagate and LaCie drives that come with an encryption option. You can find the list in the link below.
+              <br>
+			  <br>
+			  2. Please find the link below to set up your password, backup options, and mirroring activity.
+
+             </td>
+            <td><a href="https://www.seagate.com/sg/en/manuals/software/toolkit/secure/" target="_blank">Learn More</a></td>
+        </tr>
+        <tr>
+            <td>Formatting</td>
+            <td>Please be informed that formatting will erase all existing data. We recommend that you back up your data securely to another storage device before proceeding. Do you understand?
+
+<br> <br>
+
+
+			
+			1. Please be informed that the exFAT file system is compatible with both Windows and Mac.
+			
+		<br>
+		<br>
+		2. Please be informed that the NTFS file system is only compatible with Windows and not with Mac, as they use different operating systems.
+		The comptible file for mac is either APFS or HFS+.
+		<br>
+		Please refer to the link below and select the operating system you would like to format, then follow the steps accordingly.
+		
+<br> <br>
+
+      Even if the formatting is not working, I would request you to try these force formatting steps to see if that could help you.
+	  
+	  <br><br>
+
+  <B>We request you to refer to the below given steps to force mount the drive.</B><br><br>
+1.Connect your drive with the Mac.<br><br>
+2.Launch Terminal by using Spotlight Search.<br><br>
+3.Type the command line: diskutil list > press Enter.<br><br>
+4.You can view the list of all devices. Find out the external disk not mounting. Here the macOS’s internal representation of the disk is “disk1”. <br><br>
+5.Type the command line: sudo mkdir /Volume/usb. Repalce “usb” with the name of your disk that will not mount. Enter admin password if required to execute this command.<br><br>
+6.Continue to type: sudo mount -t hfs /dev/disk1 /Volumes/usb into the window and execute it. Please note that “disk1” is just an example here. You should also replace the number with your own disk when operating.<br><br>
+7.Check to see if the disk is now mounted on Mac desktop or in the Finder.<br><br>
+    </td>
+            <td><a href="https://www.seagate.com/sg/en/support/kb/how-to-format-your-hard-drive-220151en/" target="_blank">Learn More</a></td>
+        </tr>
+        <tr>
+            <td>DOCK additional TS steps</td>
+            <td>    1.Could your share the Lacie Raid Manager Screenshot?<br><br>
+                    2.What is the firmware on drive ?<br><br>
+                    3.What is  the firmware on chaise/ enclosure ?<br><br>
+                    4.Could you share Disk management / Disk Utility  screenshot?<br><br>
+                    5.Did you try swapping the drive?<br><br>
+                    6.Could you try reconfiguring the RAID <br><br>
+                    7.can you share the Raid screenshot <br><br>
+                    8.What is the LED state ? <br><br>
+                    9.When was the last time it was working properly?  <br><br>
+                    10.Is the drive giving any error message? <br><br>
+                    11.Is the drive giving smart errors? <br><br>
+                    12.Was there any changes made like power surge, system update, firmware update etc</td><br><br>
+					
+					
+            <td><a href="https://www.seagate.com/sg/en/support/downloads/" target="_blank">Learn More</a></td>
+        </tr>
+		
+		<tr>
+            <td>Seatools</td>
+            <td> 1. Could you please check the health of the hard drive with the help of seatools
+Please refer to the below link to download the seatools for windows in order to check the health of the hard drive:<br> <br>
+		
+         </td>
+            <td><a href="https://www.seagate.com/in/en/support/downloads/seatools/" target="_blank">Learn More</a></td>
+        </tr>
+		<tr>
+            <td>Seatools long and short generic test</td>
+            <td> 1. Please run short and long generic test after you get the results please provide it to us in order to proceed further
+Also, kindly refer to the below link to know about how to run seatools:<br> <br>
+		
+         </td>
+            <td><a href="https://www.seagate.com/in/en/support/kb/how-to-use-seatools-for-windows-202435en/" target="_blank">Learn More</a></td>
+        </tr>
+		
+		
+		
+		<tr>
+            <td>Firecuda 530 using in PS:</td>
+            <td>1. When was the last time it was working properly?    <br> <br>
+                2. Is it possible  to connect your drive in a  M2 slot in a system ? <br> <br>
+                3. Have you tried using it with a different play station?<br> <br>
+                4. Could you share Disk management / Disk Utility  screenshot?<br> <br>
+		
+         </td>
+            <td><a href="https://www.seagate.com/sg/en/products/gaming-drives/pc-gaming/firecuda-gaming-hub/" target="_blank">Learn More</a></td>
+        </tr>
+		
+		
+            
+		
+	
+		
+		
+		<tr>
+            <td>I/O error</td>
+            <td> <B>Please try the following I/O error and let me know the result: </B> <br><br>
+			
+			In general, an I/O Device Error (short for Input/output Device Error) usually happens on external & internal hard drives, SD cards, SSDs, USB flash drives, CDs, or DVDs while you are trying to read or copy data in Windows 10/8/7. Most times, it will display "The request could not be performed because of an I/O device error" message.<br><br>
+ 
+How to fix I/O device error on an external/internal hard drive?<br><br>
+ 
+First, fix I/O device error in command prompt or by changing the transfer mode for the drive. Second, recover data from I/O device error.<br><br>
+ 
+Method 1. Fix I/O device error in Command Prompt
+1. Press "Windows" Key and type: cmd to open the menu, right-click "Command Prompt" and choose 'Run as administrator' option.<br>
+2. Click "Yes" when you are presented with a window requesting permission to launch the Command Prompt as Administrator.<br>
+3. In the new Command Prompt window, type: chkdsk E: /f /r /x (replace E with the drive letter for your device).<br>
+ <br><br>
+This option will run the chkdsk function to check and repair disk errors on the hard drive, USB drive, or other storage devices to fix I/O device error. And then you will no longer have to deal with the "The request could not be performed because of an I/O device error" prompt.<br><br>
+ 
+Method 2. Fix I/O device error by changing the transfer mode in IDE Channel Properties
+ <br><br>
+1. Press Windows+X to open the menu, then select Device Manager.<br>
+2. Expand IDE ATA/ATAPI controllers. A subset will open, listing the different IDE ATA/ATAPI channels for the computer.<br>
+3. Right-click the channel where the appropriate drive is connected, and then click Properties. Typically, this channel is Secondary IDE Channel.<br>
+4. On the Advanced Settings tab, select PIO Only in the Transfer Mode box for the device that represents the appropriate drive. Typically, this is Device 0. Then, click OK and exit all windows.<br>
+5. Test the drive and check if "The request could not be performed because of an I/O device error" message has been removed.<br>
+ 
+
+		
+         </td>
+            
+        </tr>
+       
+		
+		<tr>
+            <td>SRS tracker</td>
+            <td> Please enter your email id and case number in the below link and track the status of the data recovery drive shipment. <br>
+		
+         </td>
+            <td><a href="https://seagatewtb.secure.force.com/tracker/" target="_blank">Learn More</a></td>
+        </tr>
+        <tr>
+    </table>
+</div>
+
+<script>
+    document.getElementById('search-button').addEventListener('click', function() {
+        const input = document.getElementById('search-input').value.toLowerCase();
+        const tables = document.querySelectorAll('table');
+
+        tables.forEach(table => {
+            const rows = table.querySelectorAll('tr');
+            rows.forEach(row => {
+                const cells = row.querySelectorAll('td, th');
+                const match = Array.from(cells).some(cell => cell.textContent.toLowerCase().includes(input));
+                row.style.display = match ? '' : 'none'; // Show matching rows
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
